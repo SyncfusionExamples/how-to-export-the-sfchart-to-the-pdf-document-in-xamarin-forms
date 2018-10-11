@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Xamarin.Compression" Version="*" />
+    <PackageReference Include="Syncfusion.Xamarin.Pdf" Version="*" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="*" />
+    <PackageReference Include="Xamarin.Forms" Version="*" />
+  </ItemGroup>
+</Project>
