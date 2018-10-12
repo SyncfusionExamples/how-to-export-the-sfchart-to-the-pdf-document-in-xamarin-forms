@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChartToPDF"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             x:Class="ChartToPDF.MainPage" Padding="0,10,0,0">
+    <StackLayout>
+        <Button Text="Export as PDF" Clicked="ExportAsPDF" />
+		
+        <chart:SfChart x:Name="chart" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <chart:SfChart.BindingContext>
+            <local:ChartViewModel/>
+        </chart:SfChart.BindingContext>
+
+        <chart:SfChart.PrimaryAxis>
+            <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+        </chart:SfChart.PrimaryAxis>
+
+        <chart:SfChart.SecondaryAxis>
+            <chart:NumericalAxis Interval="5"/>
+        </chart:SfChart.SecondaryAxis>
+
+        <chart:SfChart.Series>
+                <chart:ColumnSeries ItemsSource="{Binding ColumnData}" XBindingPath="XValue" YBindingPath="YValue" DataMarkerPosition="Center" >
+                    <chart:ColumnSeries.DataMarker>
+                        <chart:ChartDataMarker >
+                            <chart:ChartDataMarker.LabelStyle>
+                                <chart:DataMarkerLabelStyle FontSize="16" FontAttributes="Bold" />
+                            </chart:ChartDataMarker.LabelStyle>
+                        </chart:ChartDataMarker>
+                    </chart:ColumnSeries.DataMarker>
+                </chart:ColumnSeries>
+        </chart:SfChart.Series>
+
+    </chart:SfChart>
+    </StackLayout>
+</ContentPage>
