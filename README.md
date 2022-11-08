@@ -270,7 +270,7 @@ namespace ChartToPDF.UWP
 
 | **Sample Output** | **Exported PDF** |
 | -------- | --------- |
-|  ![image](https://user-images.githubusercontent.com/53489303/200586736-9ee3d9aa-b308-41ab-9192-94e21a768679.png)  |  ![Exported Chart Output](https://user-images.githubusercontent.com/53489303/200586186-5197b103-fd7e-4f1d-84cb-75a0dc306bc1.png)  |
+|  ![Chart before exporting in Xamarin.Forms](https://user-images.githubusercontent.com/53489303/200586736-9ee3d9aa-b308-41ab-9192-94e21a768679.png)  |  ![Exported Chart Output](https://user-images.githubusercontent.com/53489303/200586186-5197b103-fd7e-4f1d-84cb-75a0dc306bc1.png)  |
 
 KB article - [How to export the Chart to the PDF document in Xamarin.Forms?](https://www.syncfusion.com/kb/9404/how-to-export-the-chart-to-the-pdf-document-in-xamarin-forms)
 
